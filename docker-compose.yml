@@ -42,11 +42,6 @@ services:
       options:
         max-file: "10"
         max-size: "50m"
-    deploy:
-      resources:
-        limits:
-          cpus: '0.2'
-          memory: 500M
     command:
       - mysqld
       - --character-set-server=utf8mb4
@@ -66,11 +61,6 @@ services:
         max-size: "50m"
     ports:
       - "122:22"
-    deploy:
-      resources:
-        limits:
-          cpus: '0.2'
-          memory: 500M
     volumes:
       - "./apps/php/php.ini:/etc/php/8.0/fpm/php.ini:ro"
       - "./apps/php/www.conf:/etc/php/8.0/fpm/pool.d/www.conf:ro"
