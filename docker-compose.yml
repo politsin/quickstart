@@ -64,6 +64,8 @@ services:
       options:
         max-file: "10"
         max-size: "50m"
+    ports:
+      - "122:22"
     deploy:
       resources:
         limits:
