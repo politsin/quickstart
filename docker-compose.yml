@@ -26,8 +26,8 @@ services:
       - "./apps/run:/var/run"
       - "./log:/var/log/nginx"
       - "./www/html:/var/www/html:ro"
-#     - "./apps/certbot/tls/fullchain.pem:/etc/nginx/default/fullchain.pem:ro"
-#     - "./apps/certbot/tls/private.pem:/etc/nginx/default/private.pem:ro"
+  #   - "./apps/certbot/tls/fullchain.pem:/etc/nginx/default/fullchain.pem:ro"
+  #   - "./apps/certbot/tls/private.pem:/etc/nginx/default/private.pem:ro"
   mysql:
     image: mariadb:10.5
     container_name: mysql
