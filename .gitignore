@@ -1,5 +1,6 @@
 # Git ignore vhosts
 apps/mysql/db
 apps/nginx/vhosts
+apps/run
 www/html
 log
