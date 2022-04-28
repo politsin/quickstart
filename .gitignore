@@ -4,3 +4,4 @@ apps/nginx/vhosts
 apps/run
 www/html
 log
+www/dead.letter
